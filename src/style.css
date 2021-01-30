@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Lato';
+    font-weight: 300;
+    src: url('fonts/lato/light.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/lato/regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: bold;
+    font-weight: 700;
+    src: url('fonts/lato/bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 900;
+    src: url('fonts/lato/black.ttf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-print-color-adjust: exact;
+}
+
+html, body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+}
+
+div.gradient-aqua {
+    background: rgb(0, 211, 212);
+    background: linear-gradient(45deg, rgba(0, 211, 212, 1) 0%, rgba(0, 222, 223, 1) 50%, rgba(0, 233, 233, 1) 100%);
+}
+
+div.gradient-blue {
+    background: rgb(11, 191, 228);
+    background: linear-gradient(45deg, rgba(11, 191, 228, 1) 0%, rgba(16, 205, 234, 1) 50%, rgba(22, 219, 241, 1) 100%);
+}
+
+div.gradient-grey {
+    background: rgb(90, 104, 119);
+    background: linear-gradient(45deg, rgba(90, 104, 119, 1) 0%, rgba(115, 129, 144, 1) 50%, rgba(140, 154, 168, 1) 100%);
+}
+
+div.gradient-pink {
+    background: rgb(243, 107, 225);
+    background: linear-gradient(45deg, rgba(243, 107, 225, 1) 0%, rgba(247, 133, 233, 1) 50%, rgba(249, 158, 240, 1) 100%);
+}
+
+div.gradient-purple {
+    background: rgb(96, 40, 205);
+    background: linear-gradient(45deg, rgba(96, 40, 205, 1) 0%, rgba(122, 58, 218, 1) 50%, rgba(147, 76, 230, 1) 100%);
+}
+
+div.gradient-red {
+    background: rgb(238, 86, 86);
+    background: linear-gradient(45deg, rgba(238, 86, 86, 1) 0%, rgba(242, 109, 109, 1) 50%, rgba(247, 135, 135, 1) 100%);
+}
+
+.footer {
+    height: auto;
+}
+
+@media print {
+    .footer {
+        height: 100%;
+    }
+}
